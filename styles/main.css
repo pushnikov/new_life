@@ -3,6 +3,30 @@ html {
   margin:auto;
 }
 
+.menu {
+  background-color: pink;
+  grid-area: menu;
+}
+
+.logo {
+  background-color: pink;
+  grid-area: logo;
+}
+
+.search {
+  background-color: pink;
+  grid-area: search;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 75px 380px 110px 365px 90px;
+  grid-template-rows: 65px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  "menu . logo . search"
+}
+
 .home {
   background-color: white;
   grid-area: h;
@@ -33,7 +57,7 @@ html {
   grid-area: c2;
 }
 
-.container {
+.container2 {
   display: grid;
   grid-template-columns: 260px 20px 260px 20px 60px 20px 380px;
   grid-template-rows: 510px 480px 420px;
@@ -42,4 +66,22 @@ html {
   "h h h h h h h"
   "a a a a a . s"
   "c . so . c2 c2 c2";
+}
+
+.copyright {
+  background-color: white;
+  grid-area: cr;
+}
+
+.socnet {
+  background-color: white;
+  grid-area: sn;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows: ;
+  grid-template:
+  "cr . sn";
 }
